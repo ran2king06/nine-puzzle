@@ -1,0 +1,43 @@
+@keyframes fade-in {
+  0% {
+    opacity: 100%;
+  }
+  33% {
+    opacity: 60%;
+  }
+  66% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 60%;
+  }
+}
+
+/* 100px 為其起始位置 */
+@keyframes ball-move {
+  from {
+    left: calc(0px + 100px) 
+  }
+
+  to {
+    left: calc(500px + 100px)
+  }
+}
+
+/* 495px 為其起始位置 */
+@keyframes ball-transform {
+  from {
+    transform: translate(495px, -50%)
+  }
+
+  to {
+    transform: translate(995px, -50%)
+  }
+}
+
+@keyframes ball-move-corner {
+  to {
+    left: 100%;
+    top: 100%;
+  }
+}
